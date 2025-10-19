@@ -1,20 +1,20 @@
--- CareerFlow Resume Builder - MySQL Setup Script
+-- CareerVault Resume Builder - MySQL Setup Script
 -- This script creates the database and sets up basic configuration
 
 -- Create database
-CREATE DATABASE IF NOT EXISTS `careerflow`
+CREATE DATABASE IF NOT EXISTS `careervault`
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
 -- Use the database
-USE `careerflow`;
+USE `careervault`;
 
 -- Create a dedicated user (optional)
--- CREATE USER 'careerflow'@'localhost' IDENTIFIED BY 'careerflow_password';
--- GRANT ALL PRIVILEGES ON careerflow.* TO 'careerflow'@'localhost';
+-- CREATE USER 'careervault'@'localhost' IDENTIFIED BY 'careervault_password';
+-- GRANT ALL PRIVILEGES ON careervault.* TO 'careervault'@'localhost';
 -- FLUSH PRIVILEGES;
 
 -- Show database info
-SELECT 'CareerFlow database created successfully!' as message;
+SELECT 'Careervault database created successfully!' as message;
 SELECT DATABASE() as current_database;
-SHOW DATABASES LIKE 'careerflow';
+SHOW DATABASES LIKE 'careervault';

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "========================================"
-echo "CareerFlow Resume Builder - Setup Script"
+echo "CareerVault Resume Builder - Setup Script"
 echo "========================================"
 echo
 

@@ -1,7 +1,7 @@
 # CareerFlow Resume Builder - PowerShell Setup Script
 
 Write-Host "========================================" -ForegroundColor Cyan
-Write-Host "CareerFlow Resume Builder - Setup Script" -ForegroundColor Cyan
+Write-Host "CareerVault Resume Builder - Setup Script" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
