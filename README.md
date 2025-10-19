@@ -1,4 +1,4 @@
-## CareerFlow — Resume Builder (Laravel + React SPA)
+## CareerVault — Resume Builder (Laravel + React SPA)
 
 A single-page application for building and managing resumes. The backend is powered by Laravel 12 with Sanctum token authentication and a RESTful API; the frontend is a React app bundled with Vite and uses React Router and Axios.
 
@@ -7,7 +7,7 @@ A single-page application for building and managing resumes. The backend is powe
 -   **Backend**: Laravel 12, Eloquent ORM, Sanctum
 -   **Frontend**: React, React Router, Vite, Tailwind CSS
 -   **HTTP**: Axios with bearer token interceptor
--   **DB**: SQLite (default) or any Laravel-supported database
+-   **DB**: MySQL (default) or any Laravel-supported database
 
 ## Quick Start
 

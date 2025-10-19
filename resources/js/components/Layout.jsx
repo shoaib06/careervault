@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { LogOut, FileText, Menu, X, ChevronDown, Home } from 'lucide-react';
+import { useAppConfig } from '../hooks/useAppConfig';
 import api from '../services/api';
 
 export const Layout = () => {
     const navigate = useNavigate();
     const location = useLocation();
+    const { appName } = useAppConfig();
     const [user, setUser] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -68,7 +70,7 @@ export const Layout = () => {
                             className="flex items-center gap-2 font-bold text-xl text-blue-600 hover:text-blue-700 transition"
                         >
                             <FileText size={28} className="text-blue-600" />
-                            <span className="hidden sm:inline">ResumeBuilder</span>
+                            <span className="hidden sm:inline">{appName}</span>
                         </Link>
 
                         {/* Desktop Menu */}
@@ -227,7 +229,7 @@ export const Layout = () => {
                         <div>
                             <div className="flex items-center gap-2 mb-4">
                                 <FileText size={24} className="text-blue-400" />
-                                <h3 className="font-bold text-lg text-white">ResumeBuilder</h3>
+                                <h3 className="font-bold text-lg text-white">{appName}</h3>
                             </div>
                             <p className="text-gray-400 text-sm">
                                 Create professional resumes in minutes. Perfect for job seekers and career changers.
@@ -326,7 +328,7 @@ export const Layout = () => {
                     <div className="border-t border-gray-700 pt-8">
                         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                             <p className="text-gray-400 text-sm">
-                                &copy; 2024 ResumeBuilder. All rights reserved.
+                                &copy; 2024 {appName}. All rights reserved.
                             </p>
                             <div className="flex gap-4">
                                 <a

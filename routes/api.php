@@ -9,7 +9,9 @@ use App\Http\Controllers\Api\SkillController;
 use App\Http\Controllers\Api\EducationController;
 use App\Http\Controllers\Api\CertificationController;
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ConfigController;
 
+Route::get('/config', [ConfigController::class, 'index']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 
